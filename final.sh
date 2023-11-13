@@ -20,6 +20,6 @@ node {
     stage ("Deloy") {
         sshagent(['697f0bbf-96eb-488a-a98f-162fc6f2ea93']) {
           sh 'scp -o StrictHostKeyChecking=no target/myweb-8.5.2.war ec2-user@13.127.232.83:/home/ec2-user/apache-tomcat-9.0.82/webapps/'
-       }
+        }
     }
 }
